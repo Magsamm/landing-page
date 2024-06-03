@@ -45,6 +45,8 @@ img {
 
 .awesome {
   display: flex;
+  padding: 50px 0px 50px;
+  justify-content: space-around;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 48px;
@@ -66,9 +68,8 @@ img {
 /* subtext */
 .awesome p {
   display: flex;
-  flex-direction: column;
   width: 400px;
-  height: 200px;
+  height: 50px;
   font-size: 15px;
   font-weight: normal;
   color: darkgray;
@@ -97,63 +98,116 @@ img {
 
 .information-container {
   display: flex;
-  justify-content: center;
-  gap: 52px;
-  height: 400px;
-  padding-top: 50px;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
+}
+
+.information-container .title {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  flex-shrink: 0;
+  font-weight: bold;
+  
 }
 
 .info {
   display: flex;
-  height: 200px;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  margin-top: 100px;
+  color: black;
+  max-width: 300px;
 }
 /* https://www.w3schools.com/css/css3_borders.asp */
-.information-container img {
+.info img {
   display: flex;
+  align-items: center;
   height: 150px;
   width: 150px;
   border: 2px solid #3882f6;
   border-radius: 25px;
-  flex-grow: 0;
-  flex-shrink: 0;
+
 }
 
-.info p {
-  display: flex;
-  flex-direction: column;
-  width: 150px;
-  flex-wrap: wrap;
-}
 
 .quote {
   display: flex;
-  height: 300px;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 50px;
-  
   background-color: #e5e7eb;
 }
 
 .quote p {
   display: flex;
-  font-size: 20px;
+  font-size: 30px;
   font-style: italic;
   align-items: center;
   display: flex;
-  width: 400px;
+  width: 800px;
   gap: 50px;
 }
 
-signature {
+span {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: flex-end;
   flex-shrink: 0;
   font-size: 20px;
   font-style: normal;
   font-weight: bold;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1000px;
+  width: 2000px;
+  gap: 20px;
+  background-color: white;
+
+}
+
+.signup-background {
+  display: flex;
+  width: 1000px;
+  justify-content: space-around;
+  background-color: #3882f6;
+
+}
+
+.signup-background title {
+  display: flex;
+  color: white;
+}
+
+.signup p {
+  display: flex;
+  height: 50;
+  flex-grow: 0;
+}
+
+.signup-background button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-direction: row;
+  background-color: #3882f6;
+  color: white;
+  border-radius: 5px;
 }
 
 footer {

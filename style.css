@@ -140,13 +140,6 @@ img {
 
 }
 
-.text {
-  display: flex;
-  width: 150px;
-  align-self: center;
-}
-
-
 .quote {
   display: flex;
   flex-direction: column;

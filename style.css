@@ -4,11 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  height: 100vh;
   margin: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -118,7 +120,6 @@ ul {
   margin-top: 30px;
   margin-bottom: 30px;
   color: black;
-  max-width: 250px;
 
 }
 
@@ -140,19 +141,18 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   flex: 1;
   background-color: #e5e7eb;
 }
 
 .quote p {
   display: flex;
+  margin-left: 200px;
   font-size: 25px;
   font-style: italic;
   align-items: center;
-  display: flex;
   width: 900px;
-
-  
 }
 
 /* the quote signature */

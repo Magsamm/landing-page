@@ -98,39 +98,41 @@ img {
 
 .information-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   background-color: white;
 }
 
 .information-container .title {
   display: flex;
-  margin-top: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
   flex-direction: column;
-  align-self: flex-start;
-  align-items: center;
-  justify-content: center;
+  align-self: center;
   font-size: 30px;
-  flex-shrink: 0;
   font-weight: bold;
+  padding-top: 20px;
   
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .info {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 300px;
+  height: 250px;
   margin-top: 100px;
   color: black;
-  max-width: 300px;
+  max-width: 250px;
+
 }
+
 /* https://www.w3schools.com/css/css3_borders.asp */
 .info img {
   display: flex;
-  align-items: center;
   height: 150px;
   width: 150px;
   border: 2px solid #3882f6;
@@ -138,12 +140,19 @@ img {
 
 }
 
+.text {
+  display: flex;
+  width: 150px;
+  align-self: center;
+}
+
 
 .quote {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
   padding: 50px;
   background-color: #e5e7eb;
 }
@@ -155,18 +164,19 @@ img {
   align-items: center;
   display: flex;
   width: 800px;
-  gap: 50px;
+
+  
 }
 
 span {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-self: flex-end;
   flex-shrink: 0;
+  align-self: start;
+  margin-top: 200px;
   font-size: 20px;
   font-style: normal;
   font-weight: bold;
+  flex-grow: 1;
 }
 
 .signup {

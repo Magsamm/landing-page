@@ -128,7 +128,7 @@ ul {
   display: flex;
   height: 150px;
   width: 150px;
-  border: 2px solid #3882f6;
+  border: 5px solid #3882f6;
   border-radius: 25px;
 
 }
@@ -139,9 +139,7 @@ ul {
 
 .quote {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  justify-content: center;
   flex: 1;
   background-color: #e5e7eb;
 }
@@ -164,7 +162,7 @@ span {
   font-size: 20px;
   font-style: normal;
   font-weight: bold;
-  flex-grow: 1;
+  
 }
 
 .signup {
